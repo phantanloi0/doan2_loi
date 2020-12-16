@@ -1,0 +1,18 @@
+<%- include("header") -%>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<meta name="viewport" content="width=500, initial-scale=1"> <!--This line of code is for mobile responsive -->
+<div class="BorderMargin">
+<h1>Welcome to Nodejs LED Control Server - IoTbyHVM.OOO</h1>
+<p> Visit <a href="https://iotbyhvm.ooo"> IoTbyHVM.ooo </a> For more Raspberry Pi Tutorials and IoT Tutorials.
+
+  <form action="/led/on" method="post">
+    <button type="submit" class="button">LED On </button>
+      <button type="submit" formmethod="post" formaction="/led/off" class="button button3">LED Off</button>
+
+  </form>
+  <a>Led Status: <%= status %></a>
+</div>
+
+<%- include("footer") -%>
